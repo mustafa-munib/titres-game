@@ -1,19 +1,22 @@
 import { Cell, Piece } from '@/lib/tetris.types';
+import { string } from 'zod';
 
 interface GameBoardProps {
   board: Cell[][];
   currentPiece: Piece | null;
 }
 
-const CELL_COLORS = {
-  0: 'bg-gray-900',
-  1: 'bg-red-500',
-  2: 'bg-blue-500',
-  3: 'bg-green-500',
-  4: 'bg-yellow-500',
-  5: 'bg-purple-500',
-  6: 'bg-orange-500',
-  7: 'bg-cyan-500',
+
+
+const CELL_COLORS:any = {
+	0: "bg-gray-900",
+	1: "bg-red-500",
+	2: "bg-blue-500",
+	3: "bg-green-500",
+	4: "bg-yellow-500",
+	5: "bg-purple-500",
+	6: "bg-orange-500",
+	7: "bg-cyan-500",
 };
 
 export function GameBoard({ board, currentPiece }: GameBoardProps) {
